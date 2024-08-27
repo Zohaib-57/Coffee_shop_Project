@@ -45,9 +45,9 @@ nav{
     text-align: center;
 }
 .shop-name p{
-    font-size: 18px;
-    font-weight: 500;
     text-align: center;
+    font-size: 15px;
+    font-weight: 600;
 }
 .shop-name span{
     color: rgb(129, 44, 1);
@@ -61,7 +61,7 @@ nav{
     font-size: 35px;
     font-weight: 800;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 .coffee-card-1,.coffee-card-2{
     display: flex;
@@ -86,9 +86,10 @@ nav{
 }
 .coffee p{
     text-align: center;
+    font-size: 15px;
+    font-weight: 600;
     color: white;
 }
-
 .coffee img{
     width: 150px;
     height: 150px;
@@ -96,4 +97,58 @@ nav{
     top: -18%;
     display: flex;
     margin: 0 auto;
+}
+.body-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body-content-img{
+    padding: 30px;
+}
+.body-content-heading {
+    padding: 50px;
+}
+.body-content-heading p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.cold-heading{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px;
+}
+#cold-coffee{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    margin-top:50px;
+}
+.cold-coffee{
+    padding: 18px;
+    margin: 35px;
+    background:url(./images/bg-5.jpeg);
+    background-size:auto;
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
+}
+.cold-coffee img{
+    width: 150px;
+    height: 210px;
+    position: relative;
+    top: -25%;
+    display: flex;
+    margin: 0 auto;
+}
+.cold-coffee h3{
+    color:white;
+text-align: center;
+}
+.cold-coffee p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
