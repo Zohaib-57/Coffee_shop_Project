@@ -11,7 +11,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid green;
 }
 .logo img{
     width: 80px;
@@ -57,4 +56,44 @@ nav{
     width: 450px;
     height: 450px;
     margin-top: 10px;
+}
+.coffee-heading{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px;
+}
+.coffee-card-1,.coffee-card-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 20px;
+}
+.coffee{
+    padding: 20px;
+    margin: 30px;
+    background:url(./images/MuchaTseBle.jpeg);
+    background-size: cover;
+    width: 200px;
+    border-radius: 20px;
+}
+.coffee h3{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+.coffee p{
+    text-align: center;
+    color: white;
+}
+
+.coffee img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -18%;
+    display: flex;
+    margin: 0 auto;
 }
