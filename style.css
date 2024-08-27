@@ -161,5 +161,32 @@ text-align: center;
  #beans-section{
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
+    place-content: center;
+    margin-top: 40px;
+
+ }
+ .beans-bag{
+    padding: 15px;
+    margin: 25px;
+    background:url(./images/1.jpeg);
+    background-size: cover;
+    width: 220px;
+    border-radius: 20px;
+ }
+ .beans-bag img{
+    width: 270px;
+    height:270px ;
+    position: relative;
+    top: -35%;
+    left: -5%;
+ }
+ .beans-bag h3{
+    color:white;
+    text-align: center;
+ }
+ .beans-bag p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
  }
