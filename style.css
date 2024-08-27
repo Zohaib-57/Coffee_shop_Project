@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "PT Sans", sans-serif;
+    /* font-weight: 400; */
+    /* font-style: normal; */
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid green;
 }
 .logo img{
     width: 80px;
@@ -25,4 +31,30 @@ nav{
     text-decoration: none;
     border-radius: 10px;
     margin: 5px;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.shop-name{
+    margin-top: 10px;
+}
+.shop-name h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.shop-name p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.shop-name span{
+    color: rgb(129, 44, 1);
+}
+.slide-img img{
+    width: 450px;
+    height: 450px;
+    margin-top: 10px;
 }
