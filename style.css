@@ -9,13 +9,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 .logo img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 10px;
 }
 .nav-links {
@@ -62,6 +62,39 @@ nav{
     width: 450px;
     height: 450px;
     margin-top: 10px;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-img img {
+    animation: slideIn 1.8s ease-out;
+}
+.coffee, .cold-coffee, .beans-bag {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.coffee:hover, .cold-coffee:hover, .beans-bag:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); 
+}
+.coffee:hover img, .cold-coffee:hover img, .beans-bag:hover img {
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coffee h3, .cold-coffee h3, .beans-bag h3 {
+    transition: color 0.3s ease-in-out;
+}
+.coffee:hover h3, .cold-coffee:hover h3, .beans-bag:hover h3 {
+    color: #FF4500;
 }
 .coffee-heading{
     font-size: 35px;
@@ -189,6 +222,13 @@ text-align: center;
     display: flex;
     place-items: center;
  }
+ .beans-bag img {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.beans-bag:hover img {
+    content: url('./images/spilled-bag.png');
+}
  .beans-bag h3{
     color:white;
     text-align: center;
