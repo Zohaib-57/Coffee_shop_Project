@@ -9,6 +9,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 3git 0px;
 }
 .logo img{
     width: 80px;
