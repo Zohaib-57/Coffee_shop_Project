@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: "PT Sans", sans-serif;
-    /* font-weight: 400; */
-    /* font-style: normal; */
 }
 nav{
     display: flex;
@@ -19,18 +17,6 @@ nav{
     margin-left: 40px;
     margin-top: 10px;
 }
-/* .nav-links{
-    margin-right: 40px;
-}
-.nav-links a{
-    padding: 10px 15px;
-    background-color: 	rgb(165, 42, 42,0.750);
-    color: rgb(75,38,20);
-    font-weight: 550;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 5px;
-} */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -45,7 +31,7 @@ nav{
 }
 
 .nav-links img {
-    width: 24px; /* Adjust icon size */
+    width: 24px;
     height: 24px;
 }
 
@@ -234,7 +220,7 @@ text-align: center;
     margin: 7px;
  }
 
- 
+  /* media responsinvnes for large screens  */
 @media (max-width: 1000px) {
     .logo img{
         width: 64px;
@@ -325,15 +311,14 @@ text-align: center;
         gap: 8px;
     }
     
-    /* Hide the text on small screens */
+    /* Media responsivness for small screens */
     @media (max-width: 400px) {
         .nav-links a span {
             display: none;
         }
     
-        /* Adjust padding/margins as necessary for smaller screens */
         .nav-links a {
-            font-size: 24px; /* Adjust icon size */
+            font-size: 24px;
             padding: 10px;
         }
     
