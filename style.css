@@ -19,7 +19,7 @@ nav{
     margin-left: 40px;
     margin-top: 10px;
 }
-.nav-links{
+/* .nav-links{
     margin-right: 40px;
 }
 .nav-links a{
@@ -30,7 +30,25 @@ nav{
     text-decoration: none;
     border-radius: 10px;
     margin: 5px;
+} */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+
 .main-content{
     display: flex;
     justify-content: space-between;
@@ -38,6 +56,7 @@ nav{
 }
 .shop-name{
     margin-top: 10px;
+    width: 50%;
 }
 .shop-name h1{
     font-size: 40px;
@@ -102,6 +121,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(75,38,20,0.100);
+    border-radius: 10px;
+    margin: 10px;
 }
 .body-content-img{
     padding: 30px;
@@ -167,14 +189,14 @@ text-align: center;
  }
  .beans-bag{
     padding: 15px;
-    margin: 30px;
+    margin: 20px;
     background:url(./images/1.jpeg);
     background-size: cover;
-    width: 220px;
+    width: 180px;
     border-radius: 20px;
  }
  .beans-bag img{
-    width: 200px;
+    width: 180px;
     position: relative;
     top: -25%;
     display: flex;
@@ -211,3 +233,130 @@ text-align: center;
     height: 36px;
     margin: 7px;
  }
+
+ 
+@media (max-width: 1000px) {
+    .logo img{
+        width: 64px;
+        height: 64px;
+    }
+    .main-content {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .shop-name{
+        width: 100%;
+    }
+    .shop-name img{
+        width: 90%;
+    }
+    .shop-name h1 {
+        font-size: 30px;
+    }
+    .slide-img img {
+       width: 90%;
+       height: 90%;
+    }
+    .coffee-card-1, .coffee-card-2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .coffee {
+        width: 70%;
+        margin: 10px 10px;
+    }
+    .coffee img{
+        position: relative;
+        top: -50%;
+    }
+    .body-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .body-content-img,.body-content-heading{
+        padding: 30px;
+        width: 80%;
+    }
+    .body-content-img img{
+        width: 90%;
+    }
+    #cold-coffee {
+        align-items: center;
+        display: flex;
+        flex-direction:column ;
+    }
+
+    #beans-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .beans-bag {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links, .contact {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contact img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* Hide the text on small screens */
+    @media (max-width: 400px) {
+        .nav-links a span {
+            display: none;
+        }
+    
+        /* Adjust padding/margins as necessary for smaller screens */
+        .nav-links a {
+            font-size: 24px; /* Adjust icon size */
+            padding: 10px;
+        }
+    
+        .nav-links {
+            gap: 10px;
+        }
+    }
+    .coffee-card-1,.coffee-card-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .coffee{
+        width: 50%;
+    }
+    .body-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .beans-bag{
+        width: 70%;
+    }
+    footer{
+        padding: 0;
+    }
+}
