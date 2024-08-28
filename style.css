@@ -162,23 +162,23 @@ text-align: center;
     display: flex;
     flex-direction: row;
     place-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 
  }
  .beans-bag{
     padding: 15px;
-    margin: 25px;
+    margin: 30px;
     background:url(./images/1.jpeg);
     background-size: cover;
     width: 220px;
     border-radius: 20px;
  }
  .beans-bag img{
-    width: 270px;
-    height:270px ;
+    width: 200px;
     position: relative;
-    top: -35%;
-    left: -5%;
+    top: -25%;
+    display: flex;
+    place-items: center;
  }
  .beans-bag h3{
     color:white;
